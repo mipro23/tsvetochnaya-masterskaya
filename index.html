@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ed">
+  <meta name="description" content="Цветочная мастерская — букеты для важных моментов. Выберите композицию и оставьте заявку.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Цветочная мастерская">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Цветочная мастерская — цветы с чувством">
+  <meta property="og:description" content="Букеты для важных моментов. Выберите композицию и оставьте заявку.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1520763185298-1b434c9197fc?auto=format&fit=crop&w=1200&h=630&q=85">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <title>Цветочная мастерская — цветы с чувством</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Florist",
+    "name": "Цветочная мастерская",
+    "description": "Цветочная мастерская на Ярцевской улице: букеты, подарочная упаковка, свадебная флористика.",
+    "telephone": "+7-903-104-94-46",
+    "image": "https://images.unsplash.com/photo-1520763185298-1b434c9197fc?auto=format&fit=crop&w=1200&q=85",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ярцевская улица, 32",
+      "addressLocality": "Москва",
+      "addressCountry": "RU"
+    },
+    "geo": {"@type": "GeoCoordinates", "latitude": 55.741287, "longitude": 37.4176885},
+    "hasMap": "https://yandex.com/maps/org/tsvetochnaya_masterskaya/51469944668/",
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "22:00"},
+      {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "10:00", "closes": "22:00"}
+    ],
+    "sameAs": ["https://t.me/tcvetochnaya_masterskaya"],
+    "paymentAccepted": "Наличные, банковская карта, QR-код",
+    "currenciesAccepted": "RUB"
+  }
+  </script>
+</head>
+<body>
+  <div class="announcement">Цветы, которые говорят за вас <span>✳</span> Собираем с заботой</div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Цветочная мастерская — главная">
+      <span class="brand-mark">✳</span><span>цветочная<br><b>мастерская</b></span>
+    </a>
+    <nav class="desktop-nav" id="primaryNav" aria-label="Главная навигация">
+      <a href="#catalog">Букеты</a><a href="#about">О мастерской</a><a href="#care">Забота о цветах</a><a href="#contacts">Контакты</a>
+    </nav>
+    <button type="button" class="cart-trigger" id="openCart" aria-label="Открыть корзину">Корзина <span id="cartCount" aria-live="polite">0</span></button>
+    <button type="button" class="menu-trigger" id="menuToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="primaryNav">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> ФЛОРИСТИКА С ХАРАКТЕРОМ</p>
+        <h1>Чувства,<br>собранные <em>в цветы.</em></h1>
+        <p class="hero-description">Букеты для больших признаний и тихих радостей. Живые оттенки, выразительные формы и внимание к каждой детали.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#catalog">Выбрать букет <span>↗</span></a><a class="text-link" href="#about">Познакомиться с нами <span>↓</span></a></div>
+        <div class="hero-note"><span class="note-star">✳</span><span><b>Каждый букет — особенный</b><small>Собираем вручную, с вниманием к деталям</small></span></div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1520763185298-1b434c9197fc?auto=format&fit=crop&w=1400&q=85" alt="Нежный авторский букет цветов" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1400&q=85'">
+        <div class="image-caption"><span>01 / 04</span><span>ЦВЕТЫ ВМЕСТО СЛОВ</span></div>
+        <div class="hero-sticker"><span>fresh</span><b>flowers</b><i>✳</i></div>
+      </div>
+      <div class="hero-bottom"><span>МОСКВА · ЯРЦЕВСКАЯ, 32</span><span>СОЗДАНО С ЧУВСТВОМ <span class="tiny-star">✳</span></span></div>
+    </section>
+
+    <section class="catalog section" id="catalog">
+      <div class="section-heading">
+        <div><p class="eyebrow">НАШИ КОМПОЗИЦИИ</p><h2>Найти <em>свой</em> букет</h2></div>
+        <p>Для свидания, благодарности или просто потому, что сегодня красивый день.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Фильтр букетов">
+        <button type="button" class="filter active" data-filter="all">Все букеты <span>04</span></button>
+        <button type="button" class="filter" data-filter="tender">Нежные</button>
+        <button type="button" class="filter" data-filter="bright">Яркие</button>
+        <button type="button" class="filter" data-filter="signature">Авторские</button>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="tender" data-id="rose-cloud" data-name="Розовое облако" data-price="4900">
+          <div class="product-image"><img loading="lazy" src="https://images.unsplash.com/photo-1520763185298-1b434c9197fc?auto=format&fit=crop&w=900&q=80" alt="Букет нежно-розовых цветов"><span class="product-tag">БЕСТСЕЛЛЕР</span><button type="button" class="quick-add" aria-label="Добавить Розовое облако в корзину">+</button></div>
+          <div class="product-meta"><div><h3>Розовое облако</h3><p>Пионовидные розы · нежная палитра</p></div><b>4 900 ₽</b></div>
+        </article>
+        <article class="product-card" data-category="bright" data-id="sunny-day" data-name="Солнечный день" data-price="3900">
+          <div class="product-image"><img loading="lazy" src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=80" alt="Яркая цветочная композиция"><button type="button" class="quick-add" aria-label="Добавить Солнечный день в корзину">+</button></div>
+          <div class="product-meta"><div><h3>Солнечный день</h3><p>Сезонные цветы · тёплые оттенки</p></div><b>3 900 ₽</b></div>
+        </article>
+        <article class="product-card" data-category="signature" data-id="wild-garden" data-name="Дикий сад" data-price="6200">
+          <div class="product-image"><img loading="lazy" src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=900&q=80" alt="Авторский букет в природном стиле"><span class="product-tag tag-olive">АВТОРСКИЙ</span><button type="button" class="quick-add" aria-label="Добавить Дикий сад в корзину">+</button></div>
+          <div class="product-meta"><div><h3>Дикий сад</h3><p>Воздушная форма · природная эстетика</p></div><b>6 200 ₽</b></div>
+        </article>
+        <article class="product-card" data-category="tender" data-id="soft-morning" data-name="Мягкое утро" data-price="4500">
+          <div class="product-image"><img loading="lazy" src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=900&q=80" alt="Светлый букет в минималистичном стиле"><button type="button" class="quick-add" aria-label="Добавить Мягкое утро в корзину">+</button></div>
+          <div class="product-meta"><div><h3>Мягкое утро</h3><p>Светлые цветы · спокойная композиция</p></div><b>4 500 ₽</b></div>
+        </article>
+      </div>
+      <p class="catalog-disclaimer">Каталог и цены демонстрационные — перед публикацией замените их на актуальный ассортимент мастерской.</p>
+    </section>
+
+    <section class="manifesto" id="about">
+      <div class="manifesto-image"><img loading="lazy" src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=1200&q=85" alt="Цветы в мастерской"></div>
+      <div class="manifesto-copy"><p class="eyebrow">НЕ ПРОСТО ЦВЕТЫ</p><h2>Красота —<br>в <em>отношении.</em></h2><p>Мы верим, что хороший букет не обязан быть громким. Иногда достаточно одной выразительной детали, неожиданного сочетания и чувства, с которым всё собрано.</p><a class="text-link" href="#contacts">Расскажите, что задумали <span>↗</span></a><div class="manifesto-sign">С теплом, ваша мастерская <span>✳</span></div></div>
+    </section>
+
+    <section class="care section" id="care">
+      <div class="section-heading"><div><p class="eyebrow">МАЛЕНЬКИЙ РИТУАЛ</p><h2>Чтобы цветы <em>радовали дольше</em></h2></div><p>Несколько простых привычек — и букет сохранит свежесть заметно дольше.</p></div>
+      <div class="care-grid"><div class="care-item"><span>01</span><div><h3>Чистая вода</h3><p>Вымойте вазу и меняйте воду каждый день или через день.</p></div><i>↗</i></div><div class="care-item"><span>02</span><div><h3>Свежий срез</h3><p>Подрежьте стебли на 1–2 см острым ножом под углом.</p></div><i>↗</i></div><div class="care-item"><span>03</span><div><h3>Правильное место</h3><p>Берегите букет от прямого солнца, батарей и сквозняков.</p></div><i>↗</i></div></div>
+    </section>
+
+    <section class="contact-band" id="contacts"><div><p class="eyebrow">ЕСТЬ ИДЕЯ?</p><h2>Давайте создадим<br><em>что-то красивое.</em></h2></div><div class="contact-side"><p>Позвоните, чтобы обсудить букет, доставку или индивидуальную композицию.</p><a class="button button-light" href="tel:+79031049446">Позвонить <span>↗</span></a><a class="contact-telegram" href="https://t.me/tcvetochnaya_masterskaya" target="_blank" rel="noopener">Написать в Telegram ↗</a></div></section>
+
+    <section class="location-section" aria-label="Контакты и адрес магазина">
+      <div class="location-copy"><p class="eyebrow">МЫ РЯДОМ</p><h2>Загляните<br><em>в мастерскую.</em></h2>
+        <div class="detail-row"><span class="detail-icon">⌖</span><div><b>Адрес</b><p>Москва, Ярцевская улица, 32</p><a href="https://yandex.com/maps/org/tsvetochnaya_masterskaya/51469944668/" target="_blank" rel="noopener">Построить маршрут в Яндекс Картах ↗</a></div></div>
+        <div class="detail-row"><span class="detail-icon">◷</span><div><b>Время работы</b><p>Пн–сб 09:00–22:00 · вс 10:00–22:00</p></div></div>
+        <div class="detail-row"><span class="detail-icon">☎</span><div><b>Телефон</b><p><a href="tel:+79031049446">+7 (903) 104-94-46</a></p><small>Дополнительные номера: <a href="tel:+79647218755">+7 (964) 721-87-55</a>, <a href="tel:+79969795838">+7 (996) 979-58-38</a></small></div></div>
+        <div class="detail-row"><span class="detail-icon">✳</span><div><b>Что есть в мастерской</b><p>Букеты и цветы, подарочная упаковка, свадебная флористика, комнатные растения и мягкие игрушки.</p></div></div>
+        <div class="detail-row"><span class="detail-icon">₽</span><div><b>Оплата и получение</b><p>Наличные, банковская карта или QR-код. В карточке указаны доставка и самовывоз.</p></div></div>
+      </div>
+      <div class="map-frame"><iframe title="Цветочная мастерская на Яндекс Картах" src="https://yandex.ru/map-widget/v1/?oid=51469944668&ol=biz" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><div class="map-note"><span><b>Цветочная мастерская</b><small>м. Молодёжная · около 2 минут пешком</small></span><a href="https://yandex.com/maps/org/tsvetochnaya_masterskaya/51469944668/" target="_blank" rel="noopener">Открыть карту ↗</a></div></div>
+    </section>
+
+    <section class="review-highlights"><div class="review-title"><p class="eyebrow">ЧТО ЦЕНЯТ ПОКУПАТЕЛИ</p><h2>Внимание к <em>деталям.</em></h2><p>По отзывам в Яндекс Картах покупатели отмечают помощь флористов с выбором, аккуратное оформление, свежесть цветов и возможность подготовить корпоративные букеты к сроку.</p><a href="https://yandex.com/maps/org/tsvetochnaya_masterskaya/51469944668/" target="_blank" rel="noopener">Читать отзывы на Яндекс Картах ↗</a></div><div class="review-score"><strong>5,0</strong><span>★ ★ ★ ★ ★</span><small>274 оценки на Яндекс Картах<br>«Хорошее место — 2026»</small></div></section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#top"><span class="brand-mark">✳</span><span>цветочная<br><b>мастерская</b></span></a><span>Ярцевская улица, 32 · Москва<br><a href="tel:+79031049446">+7 (903) 104-94-46</a></span><a href="#top">Наверх ↑</a><small>© <span id="year"></span> Цветочная мастерская · Данные об организации сверены с карточкой на Яндекс Картах.</small></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Корзина" aria-hidden="true" inert>
+    <div class="drawer-head"><div><p class="eyebrow">ВАШ ВЫБОР</p><h2>Корзина <span id="drawerCount">(0)</span></h2></div><button type="button" class="close-drawer" id="closeCart" aria-label="Закрыть корзину">×</button></div>
+    <div class="cart-items" id="cartItems"><div class="empty-cart">Пока здесь пусто.<br><span>Пусть первым будет любимый букет.</span></div></div>
+    <div class="cart-footer"><div class="total-line"><span>Итого</span><b id="cartTotal">0 ₽</b></div><button type="button" class="button button-dark checkout-button" id="checkout">Оформить заявку <span>↗</span></button><small>После заполнения откроется Telegram с подготовленным текстом заказа.</small></div>
+  </aside>
+
+  <dialog class="order-modal" id="order" aria-labelledby="orderTitle" aria-describedby="orderIntro">
+    <button type="button" class="modal-close" id="closeOrder" aria-label="Закрыть">×</button>
+    <p class="eyebrow">ПОСЛЕДНИЙ ШТРИХ</p><h2 id="orderTitle">Оформить <em>заявку</em></h2>
+    <p class="modal-intro" id="orderIntro">Заполните контакты — сайт соберёт состав заказа и откроет Telegram с готовым текстом. Перед отправкой вы сможете проверить сообщение.</p>
+    <form id="orderForm">
+      <label>Как к вам обращаться<input name="customer" required maxlength="80" autocomplete="name" placeholder="Ваше имя"></label>
+      <label>Телефон для связи<input name="phone" type="tel" required maxlength="20" autocomplete="tel" inputmode="tel" pattern="[0-9()+\s-]{10,20}" title="Введите номер телефона, например +7 999 123-45-67" placeholder="+7 ___ ___-__-__"></label>
+      <label>Пожелания<textarea name="notes" rows="3" maxlength="500" placeholder="Дата, повод, пожелания к букету"></textarea></label>
+      <button class="button button-dark" type="submit">Подготовить заявку <span>↗</span></button>
+    </form>
+    <div class="order-result" id="orderResult" hidden><p>Проверьте сообщение и откройте Telegram. Нажмите «Отправить» в самом Telegram, чтобы передать заказ магазину.</p><textarea id="orderText" rows="8" readonly></textarea><a class="button button-dark telegram-send" id="sendTelegram" href="https://t.me/tcvetochnaya_masterskaya" target="_blank" rel="noopener">Продолжить в Telegram <span>↗</span></a><button class="button button-outline" id="copyOrder" type="button">Скопировать текст</button><small class="telegram-note">Откроется чат мастерской в Telegram. Проверьте текст и нажмите «Отправить» — только так заявка будет передана.</small></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
